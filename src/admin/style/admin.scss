@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Chau+Philomene+One&display=swap');
+
+$black: #1C2331;
+$blue: #3F729B;
+
+*{
+    
+    text-decoration: none;
+    font-family: 'Chau Philomene One', sans-serif;
+    color: $black;
+}
+
+body {
+    background: #3F729B;
+}
+
+.nav {
+    border-bottom: solid  $blue 1px;
+    background:$black;
+    padding: 1px;
+    h1 {
+        margin-left: 5%;
+        color: $blue;
+    }
+}
+
+.manageCont {    
+    display: flex;
+    height: 100%;
+    border: $blue;
+    
+    .left {
+        text-align: center;
+        width: 30vw;
+        background: $blue;
+        justify-content: center;
+        
+        .admin {
+            margin-top: 20%;
+        }
+
+        .signout h1{
+            position: fixed;
+            bottom: 0;
+
+            
+        }
+    }
+    
+    .right {
+        width: 70vw;
+        background-color: $black;
+        color: white !important;
+        
+        .userHeader {
+            text-align: center;
+            background-color: $black;
+            border-bottom: $blue groove;
+            h1 {
+                color: $blue;
+            }
+        }
+    }
+}
+
+.artForm {
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+
+    label {
+        color: $blue;
+        text-align: center;
+        font-size: 24px;
+    }
+
+    input {
+        padding: 1%;
+        text-align: center;
+        margin: 1%;
+    }
+}
+
