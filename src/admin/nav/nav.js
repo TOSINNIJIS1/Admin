@@ -5,7 +5,7 @@ export default function Nav () {
     return (
         <div className='nav'>
             <div className='navbar'>
-                <Link to='/'> 
+                <Link to='/' style={{textDecoration: 'none'}}> 
                 <h1>
                     EnovLab Admin
                 </h1>

@@ -71,6 +71,7 @@ export default function Articles () {
                     type='date'
                     value={data.created_at} 
                     />
+                    <button> Delete </button> 
                 </form>
             ))}
             <Pagination pagine={paginate} length={ariticlesAPI.length} page={postPerPage} />

@@ -1,17 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Chau+Philomene+One&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Chau+Philomene+One&display=swap');
 
 $black: #1C2331;
 $blue: #3F729B;
 
 *{
-    
     text-decoration: none;
     font-family: 'Chau Philomene One', sans-serif;
-    color: $black;
+    color: $blue;
+
 }
 
 body {
     background: #3F729B;
+    text-decoration: unset;
 }
 
 .nav {
@@ -21,7 +22,13 @@ body {
     h1 {
         margin-left: 5%;
         color: $blue;
+        text-decoration: none;
+
     }
+}
+
+Link {
+    text-decoration: unset;
 }
 
 .manageCont {    
@@ -37,12 +44,15 @@ body {
         
         .admin {
             margin-top: 20%;
+            h1 {
+                color: $black;
+            }
         }
 
         .signout h1{
             position: fixed;
             bottom: 0;
-
+            color: $black;
             
         }
     }
@@ -73,7 +83,7 @@ body {
     label {
         color: $blue;
         text-align: center;
-        font-size: 24px;
+        // font-size: 24px;
     }
 
     input {
@@ -83,3 +93,8 @@ body {
     }
 }
 
+.add {
+    display: flex;
+    margin: 0 auto;
+    margin-left: 70%;
+}

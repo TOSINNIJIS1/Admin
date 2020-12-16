@@ -7,38 +7,38 @@ export default function Left () {
         <div className='left'>
             <div className='admin'>
                 <div>
-                    <Link to='/users'>
+                    <Link to='/users' style={{textDecoration: 'none'}}>
                         <h1> Manage Users </h1>
                     </Link>
                 </div>
 
-                <div to='/posts'>
+                <div to='/posts' >
                     {/* <NavLink> */}
                         <h1> Manage Posts </h1>
                     {/* </NavLink> */}
                 </div>
 
                 <div>
-                    <Link to='/articles'>
+                    <Link to='/articles' style={{textDecoration: 'none'}}>
                         <h1> Manage Articles </h1>
                     </Link>
                 </div>
 
                 <div>
-                    <Link to='/audios'>
+                    <Link to='/audios' style={{textDecoration: 'none'}}>
                         <h1> Manage Audios </h1>
                     </Link>
                 </div>
 
                 <div>
-                    <Link to='/books'>
+                    <Link to='/books' style={{textDecoration: 'none'}}>
                         <h1> Manage Books </h1>
                     </Link>
                 </div>
 
                 <div>
-                    <Link to='/ref'>
-                        <h1> Manage Testimonials </h1>
+                    <Link to='/ref' style={{textDecoration: 'none'}}> 
+                    <h1> Manage Testimonials </h1>
                     </Link>
                 </div>
 
