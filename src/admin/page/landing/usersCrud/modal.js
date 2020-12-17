@@ -50,7 +50,7 @@ const PostModal = (props) => {
   
     return (
       <div style={{color: 'black'}}>
-        <Button onClick={toggle} className='add' > Add User </Button>
+        <Button onClick={toggle} className='add' style={{background: '#3F729B', color: '#1C2331'}} > Add User </Button>
         
         <Modal isOpen={modal} toggle={toggle} className={className}>
           <ModalHeader toggle={toggle}>Add New User</ModalHeader>
@@ -72,7 +72,7 @@ const PostModal = (props) => {
             </div>
             <br />
             <Modal isOpen={nestedModal} toggle={toggleNested} onClosed={closeAll ? toggle : undefined}>
-              <ModalHeader> Added User </ModalHeader>
+              <ModalHeader > Added User </ModalHeader>
               <ModalBody>New User Created</ModalBody>
               <ModalFooter>
                 <Button color="secondary" onClick={toggleAll}>All Done</Button>
