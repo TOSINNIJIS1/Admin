@@ -7,7 +7,7 @@ export default function Article_Pagination ({pagine, length, page}) {
         pageNumbers.push(i)
     }
     return (
-        <div>
+        <div id="pagi">
             {pageNumbers.map(num => (
                 <div key={num} style={{display: 'flex'}}>
                     <div onClick={() => pagine(num)}>

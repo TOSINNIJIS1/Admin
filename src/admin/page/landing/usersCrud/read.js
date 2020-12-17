@@ -41,7 +41,7 @@ const UserHeader = (props) => {
         // but it's crashing after reload
         let header = Object.keys(usersGet)
         return header.map((data, i) => {
-            return <th key={i}>{data}</th>
+            return <th key={i} style={{color: 'white'}}>{data}</th>
         })
     }
 
@@ -55,18 +55,19 @@ const UserHeader = (props) => {
             const {id, username, password} = data
 
             return (
-                <tr key={i}>
-                    <td> {id} </td>
-                    <td> {username} </td>
-                    <td> {password} </td>
+                <tr key={i} >
+                    <td style={{color: 'white'}}> {id} </td>
+                    <td style={{color: 'white'}}> {username} </td>
+                    <td style={{color: 'white'}}> {password} </td>
                     
                     
                     <Button 
-                    style={{ marginLeft: '10px', color: '#3F729B' }}
+                    style={{ marginLeft: '10px'}}
                     onClick={(e) => editUser(id, e)} >  Edit </Button>
                     <Button 
-                    style={{ marginLeft: '10px' }} 
-                    onClick={(e) => deleteUsers(id, e)}><i class="bi bi-trash">Delete</i>
+                    style={{ marginLeft: '10px', }} 
+                    onClick={(e) => deleteUsers(id, e)}>
+                        Delete
                     </Button>
                 </tr>
             )
@@ -76,20 +77,15 @@ const UserHeader = (props) => {
     return (
         <div>
             <Modal read={readUsers} />
-            <h1 style={{color: '#3F729B', textAlign: 'center'}}> Users </h1>
+            <h1 style={{color: 'white', textAlign: 'center'}}> Users </h1>
             
             <table class="table table-dark table-hover">
-                <tbody>
+                <tbody class="white">
                     <tr>{Header()} </tr>
                     {Map()}
                 </tbody>
             </table>
-                        
-                        {/* <button style={{marginLeft: '1%'}}  > Edit </button>
-                        <button style={{marginLeft: '1%'}} onClick={(e) => deleteUsers(event.id, e)}> Delete </button>  */}
-                    {/* </div> */}
-                {/* ) */}
-                <Pagination paginate={paginate} total={usersGet.length} page={postPerPage} />
+                <Pagination paginate={paginate} total={usersGet.length} page={postPerPage}  />
         </div>
     )
 }

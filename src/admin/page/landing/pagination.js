@@ -7,11 +7,11 @@ export default function Pagination ({total, page, paginate}) {
         pageNumbers.push(i)
     }
     return (
-        <div>
+        <div id="pagi">
             {pageNumbers.map(num => (
                 <div key={num} style={{display: 'flex'}}>
-                    <div onClick={() => paginate(num)}>
-                        <button style={{textAlign: 'center'}}>{num}</button>
+                    <div  onClick={() => paginate(num)}>
+                        <button>{num}</button>
                     </div>
                 </div>
             ))}

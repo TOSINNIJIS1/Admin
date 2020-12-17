@@ -49,8 +49,8 @@ const PostModal = (props) => {
   }
   
     return (
-      <div style={{color: 'black'}}>
-        <Button onClick={toggle} className='add' style={{background: '#3F729B', color: '#1C2331'}} > Add User </Button>
+      <div style={{color: 'white'}}>
+        <Button onClick={toggle} className='add' style={{background: '#3F729B', color: 'white'}} > Add User </Button>
         
         <Modal isOpen={modal} toggle={toggle} className={className}>
           <ModalHeader toggle={toggle}>Add New User</ModalHeader>
