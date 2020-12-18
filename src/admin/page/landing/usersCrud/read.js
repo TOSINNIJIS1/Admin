@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import {axiosWithAuth} from '../../../api/axios';
 import Pagination from '../pagination';
-import Modal from './modal';
-import Update from './update';
+import Modal from './postModal';
+// import Update from './update';
 import { Button } from 'reactstrap';
 import { withRouter, Link } from 'react-router-dom';
 
